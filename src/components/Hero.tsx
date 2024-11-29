@@ -33,7 +33,7 @@ const Hero = () => {
         A software Engineer building solutions for the future.
       </h1>
 
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex gap-4">
         <a href="https://www.linkedin.com/in/achrafelaffas/" target="_blank">
           <Button className="w-auto mt-3 animate-slidein opacity-0 [--slidein-delay:450ms] bg-blue-600 hover:bg-blue-800 text-white">
             LinkedIn
