@@ -21,12 +21,12 @@ const Hero = () => {
   return (
     <HeroHighlight className="max-h-[84vh] h-[84vh] flex flex-col justify-center items-center text-center">
       <h1
-        className="md:text-7xl text-5xl animate-slidein opacity-0 [--slidein-delay:300ms] z-10"
+        className="md:text-7xl text-4xl animate-slidein opacity-0 [--slidein-delay:300ms] z-10"
         style={styles}
       >
         Hi. I'am Achraf
       </h1>
-      <h1 className="text-lg animate-slidein opacity-0 [--slidein-delay:350ms]">
+      <h1 className="md:text-lg px-6 md:px-0 animate-slidein opacity-0 [--slidein-delay:350ms]">
         A software Engineer building solutions for the future.
       </h1>
 
