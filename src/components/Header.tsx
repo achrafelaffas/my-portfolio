@@ -13,7 +13,7 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="w-full sticky top-0 flex h-16 items-center justify-between bg-transparent px-4 md:px-20 z-50">
+    <header className="w-full sticky top-0 flex h-16 items-center justify-between bg-background/70 px-4 md:px-20 z-50 backdrop-blur-md">
       <Link to="/">
         <img src="/images/logo.png" alt="logo" className="h-7 w-7" />
       </Link>

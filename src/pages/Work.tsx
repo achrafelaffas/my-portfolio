@@ -1,9 +1,10 @@
 import { CardSpotlight } from "@/components/ui/card-spotlight";
+import { Meteors } from "@/components/ui/meteors";
 
 const Work = () => {
   return (
-    <div className="h-[84vh] flex items-center flex-col md:flex-row justify-center gap-3">
-      <CardSpotlight className="w-full border md:w-1/3 bg-background animate-slidein opacity-0 [--slidein-delay:300ms]">
+    <div className="h-[84vh] max-h-[84vh] flex items-center flex-col md:flex-row justify-center gap-3">
+      <CardSpotlight className="overflow-hidden border hover:shadow-lg w-full md:w-1/3 dark:bg-slate-900 bg-background animate-slidein opacity-0 [--slidein-delay:300ms] backdrop-blur-md">
         <p className="text-xl font-bold relative z-20 mt-2 animate-slidein opacity-0 [--slidein-delay:350ms]">
           Java Software Engineer
         </p>
@@ -15,9 +16,10 @@ const Work = () => {
             <Step title="Enhancing integration with OpenAPI" />
           </ul>
         </div>
+        <Meteors number={20} />
       </CardSpotlight>
 
-      <CardSpotlight className="w-full border md:w-1/3 bg-background animate-slidein opacity-0 [--slidein-delay:300ms]">
+      <CardSpotlight className="overflow-hidden border hover:shadow-lg w-full md:w-1/3 dark:bg-slate-900 bg-background animate-slidein opacity-0 [--slidein-delay:300ms]">
         <p className="text-xl font-bold relative z-20 mt-2 animate-slidein opacity-0 [--slidein-delay:350ms]">
           Analyst Developer
         </p>
@@ -29,6 +31,7 @@ const Work = () => {
             <Step title="Conducting code reviews" />
           </ul>
         </div>
+        <Meteors number={20} />
       </CardSpotlight>
     </div>
   );
@@ -40,7 +43,9 @@ export const Step = ({ title }: { title: string }) => {
   return (
     <li className="flex gap-2 items-start">
       <CheckIcon />
-      <p className="animate-slidein opacity-0 [--slidein-delay:400ms]">{title}</p>
+      <p className="animate-slidein opacity-0 [--slidein-delay:400ms]">
+        {title}
+      </p>
     </li>
   );
 };

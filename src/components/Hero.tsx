@@ -1,12 +1,11 @@
 import { Button } from "./ui/button";
+import { HeroHighlight } from "./ui/hero-highlight";
 
 const Hero = () => {
   const handleDownload = () => {
-    // Example for a static file
     const fileUrl = "pdf/Achraf-EL-AFFAS-CV.pdf";
     const fileName = "resume.pdf";
 
-    // Trigger download
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = fileName;
@@ -20,9 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex flex-col h-[84vh] justify-center items-center text-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-background bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-
+    <HeroHighlight className="max-h-[84vh] h-[84vh] flex flex-col justify-center items-center text-center">
       <h1
         className="md:text-7xl text-5xl animate-slidein opacity-0 [--slidein-delay:300ms] z-10"
         style={styles}
@@ -48,7 +45,7 @@ const Hero = () => {
           Resume
         </Button>
       </div>
-    </div>
+    </HeroHighlight>
   );
 };
 
